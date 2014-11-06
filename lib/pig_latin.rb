@@ -14,12 +14,19 @@ class PigLatin
         aword.insert(-1 , a)
         @theactualword = aword.join
         @theactualword
-      elsif 
+      elsif
         end
       end
       @theactualword.+("ay")
     end
 
+    def punctuationpreventer(wwp)
+
+      thesplit = wwp.split(" ")
+
+      thesplit.select{|string| !(include?(',' || '.')}
+
+    end
 
 
   end
