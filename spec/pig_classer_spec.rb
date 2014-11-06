@@ -1,17 +1,17 @@
 require 'spec_helper'
 
-describe PigClasser do
+ describe PigClasser do
   it "translates a word beginning with a vowel" do
     translation = PigClasser.translate("apple")
     expect(translation).to be ==  "appleay"
   end
 
-  xit "translates a word beginning with a consonant" do
+  it "translates a word beginning with a consonant" do
     translation = PigClasser.translate("banana")
     expect(translation).to be ==  "ananabay"
   end
 
-  xit "translates a word beginning with two consonants" do
+  it "translates a word beginning with two consonants" do
     translation = PigClasser.translate("cherry")
     expect(translation).to be ==  "errychay"
   end
