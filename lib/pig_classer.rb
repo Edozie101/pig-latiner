@@ -2,7 +2,7 @@ class PigClasser
 
   def self.translate(wword)
     @word = wword.chars
-    if /[AEIOUaeiou]/.match(@word[0])
+    if word[0].include?(%w )
       p @word.join+('ay')
     elsif /['qu''Qu']/.match(@word[0])
       p @word
